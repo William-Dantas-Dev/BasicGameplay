@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float speed;
     public float xRange;
+    public GameObject projectilePrefab;
     void Start()
     {
         
@@ -17,7 +18,18 @@ public class PlayerController : MonoBehaviour
     {
         KeepPlayerBounds();
         PlayerMovement();
+        ShootingProjectilePrefab();
     }
+
+    private void ShootingProjectilePrefab()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
+    }
+
+
 
     private void PlayerMovement()
     {
