@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
-    
     void Start()
     {
         
@@ -21,7 +20,7 @@ public class DetectCollisions : MonoBehaviour
         if (other.CompareTag("Animals"))
         {
             Destroy(gameObject);
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
         }
         
     }

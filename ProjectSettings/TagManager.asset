@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Dog
   - Animals
+  - Shoot
   layers:
   - Default
   - TransparentFX
